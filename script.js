@@ -42,14 +42,13 @@ var correctCount = 0;
 
 function renderQuestion() {
   questionEl.textContent = question[questionIndex].question;
-  console.log(question[questionIndex].question);
 
   optionListEl.innerHTML = "";
 
   var choices = question[questionIndex].choices;
   
   var choicesLength = choices.length;
-  console.log(choicesLength)
+ 
 
   for ( var i  = 0; i< choicesLength; i++) {
     var questionItem = document.createElement("button");

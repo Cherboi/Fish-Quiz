@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fish Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
       .choices {
         list-style: none;
@@ -19,16 +20,28 @@
       </div>
       <div class="col">
       <h3 id="timer">Time Left: <span id="timer-value"></span></h3>
+
+
+      </div>
+      <div class="container">
+        <div id="questions">Question</div>
+        <ul id="option-list" class="choices"></ul>
+        <div id="question-container" class="hide">
+        </div>
+        <div class="controls">
+          <button id="start-btn" class="start-btn btn">Start</button>
+          <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
       </div>
 
 
-    <div id="questions"></div>
 
-    <ul id="option-list" class="choices"></ul>
+
+   
 
     <div id="question-result"></div>
 
-    <div id="change-question">Change Question</div>
+    <div id="change-question"></div>
 
     <script src="./script.js"></script>
   </body>
