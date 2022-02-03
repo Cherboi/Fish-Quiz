@@ -1,0 +1,123 @@
+/* Font Definitions */
+@font-face {
+  font-family: "Cambria Math";
+  panose-1: 2 4 5 3 5 4 6 3 2 4;
+}
+@font-face {
+  font-family: Calibri;
+  panose-1: 2 15 5 2 2 2 4 3 2 4;
+}
+/* Style Definitions */
+p.MsoNormal,
+li.MsoNormal,
+div.MsoNormal {
+  margin: 0in;
+  font-size: 11pt;
+  font-family: "Calibri", sans-serif;
+}
+a:link,
+span.MsoHyperlink {
+  mso-style-priority: 99;
+  color: blue;
+  text-decoration: underline;
+}
+.MsoChpDefault {
+  mso-style-type: export-only;
+}
+@page WordSection1 {
+  size: 8.5in 11in;
+  margin: 1in 1in 1in 1in;
+}
+div.WordSection1 {
+  page: WordSection1;
+}
+
+body, html {
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.bg {
+  background-image: url('/asset/image/ocean.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: Calibri;
+  font-size: clamp(1rem, 1.5vw, 4.5rem);
+}
+
+.title {
+  font-family: Cambria Math;
+  font-size: clamp(2rem, 5vw, 7rem);
+  margin: 0px 0px 35px 0px;
+  font-style: italic;
+  animation: FadeIn 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1s
+}
+
+.score-text {
+  animation: FadeIn 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1.5s
+}
+
+.btn {
+  font-family: Calibri;
+  font-size: clamp(1rem, 1.5vw, 4.5rem);
+  color: white;
+  background-color: rgba(162, 89, 162, 0.65);
+  width: calc(12.5% + 125px);
+  padding: 10px 0px;
+  margin: 50px auto;
+  border: 2px groove black;
+  cursor: pointer;
+  border-radius: 10px;
+  animation: FadeIn 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 2s
+}
+
+
+
+
+
+
+
+
+@keyframes FadeIn { 
+  0% {
+    opacity: 0;
+    transform: scale(.1);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.attribution {
+  color: #99fffc;
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  font-size: 16px;
+}
+
+.attribution a {
+  color: #99fffc;
+}
